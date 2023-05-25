@@ -1,5 +1,5 @@
 body {
-    background: url(img/R.jpg);
+    background: rgb(229, 189, 248);;
 }
 
 li{
@@ -187,7 +187,7 @@ li{
 footer {
     display: flex;
     flex-direction: column;
-    background: url(img/bg.jpg);
+    background: black;
     color: white;
     justify-content: center;
     margin-top: 6.2vh;
