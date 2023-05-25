@@ -1,0 +1,240 @@
+body {
+    background: url(/img/R.jpg);
+}
+
+li{
+    cursor: pointer;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-left: 84px;
+    width: 31px;
+    height: 48px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.sub_contenedor {
+    justify-content: left;
+    margin-top: 5vh;
+    flex: .6;
+}
+
+.texto_entrada {
+    background-color: wheat;
+    font-size: 35px;
+    resize: none;
+    height: 64vh;
+    width: 100%;
+    min-width: 300px;
+    font-family: Inter;
+    border: 1px solid black;
+}
+
+
+
+
+.texto_entrada:focus {
+    outline: none;
+}
+
+.indicacion {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 18px;
+    color: black;
+}
+
+.contenedor_inferior{
+    width: 100%;
+}
+
+.contenedor_botones{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_encriptar,
+.btn_desencriptar {
+    max-width: 325px;
+    height: 67px;
+    border-radius: 24px;
+    font-style: normal;
+    line-height: 19px;
+    text-align: center;
+    font-family: Inter;
+    cursor: pointer;
+    flex: .5;
+}
+
+.btn_encriptar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: rgb(252, 116, 143);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 5px solid rgb(255, 0, 0);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn_desencriptar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: rgb(158, 175, 250);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 5px solid rgb(29, 3, 177);
+    cursor: pointer;
+}
+
+.campo_desencriptado {
+    display: flex;
+    width: 400px;
+    height: 80vh;
+    background-color: rgb(186, 162, 252);
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px;
+    margin-right: 40px;
+    margin-top: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(71, 71, 71);
+}
+
+.titulo_no_salida {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 28.8px;
+    text-align: center;
+    width: 50%;
+    color: black;
+}
+
+.descripcion_no_salida {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    width: 50%;
+    color: RED;
+}
+
+.btn_copiar {
+    display: none;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: rgb(255, 205, 159);
+    color: rgb(3, 3, 3);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 5px solid rgb(255, 196, 0);
+    cursor: pointer;
+    position: relative;
+    top: -0px;
+    right: 4px;
+}
+
+.descripcion {
+    display: none;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    height: 650px;
+    align-content: center;
+    width: 70%;
+    height: 0.9;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+.btn_encriptar:hover{
+    background-color: white;
+    color: rgb(247, 0, 0);
+}
+
+.btn_desencriptar:hover{
+    background-color: white;
+    color: rgb(0, 37, 250);
+}
+
+.btn_copiar:hover{
+    background-color: white;
+    color: rgb(252, 81, 2);
+}
+.ocultar{
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: url(/img/bg.jpg);
+    color: white;
+    justify-content: center;
+    margin-top: 6.2vh;
+    align-content: center;
+    align-items: center;
+}
+
+.linkeding { 
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 930px) {
+    .logo {
+        display: block;
+        float: none;
+        margin-left: 20px;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub_contenedor {
+        margin: 0;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .campo_desencriptado {
+        width: 100%;
+    }
+
+    .texto_entrada {
+        height: 400px;
+    }
+
+    .campo_desencriptado {
+        height: 200px;
+    }
+
+    .ilustracion {
+        display: none;
+    }
+
+}
